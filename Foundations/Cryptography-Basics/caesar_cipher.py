@@ -1,3 +1,8 @@
+# This code and original logic comes from the "A Brief Introduction to Cryptography" course on RealPython by Christopher Trudeau
+# Source: https://realpython.com/lessons/brief-intro-cryptography/
+# My additions: Changed the secret message and wrote as a Python file rather than completing in a Python command-line environment, and
+# added extra text explanations that are printed by the console. 
+
 # cipher using dictionary comprehension
 
 print("Cipher using dictionary comprehension:")
