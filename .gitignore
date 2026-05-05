@@ -1,0 +1,45 @@
+# Virtual Environments
+myvenv/
+.myvenv/
+venv/
+.env/
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# RSA / crypto key files
+*.pem
+*.key
+*.pub
+*.crt
+
+private_key.pem
+public_key.pem
+private.pem
+public.pem
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+output.txt
+encrypted_output.json
