@@ -15,6 +15,7 @@ __pycache__/
 .Python
 
 # RSA / crypto key files
+keys/
 *.pem
 *.key
 *.pub
