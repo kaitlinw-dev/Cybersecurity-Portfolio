@@ -15,9 +15,14 @@ This project demonstrates RSA and AES encryption with HMAC verification in a Pyt
 
 ## How to Run
 
-1. Install requirements (inside of project directory, this is important): `pip install -r requirements.txt`
-    - Create a virtual environment inside of your project directory: `python3 -m venv <venv_name>`
-2. Activate virtual environment (replace `<venv_name>` with name of your virtual environment): `source <venv_name>/bin/activate`
+First time:
+
+1. Create a virtual environment inside of your project directory (only need to do this once): `python3 -m venv <venv_name>`
+
+Subsequent use:
+
+1. Activate virtual environment (replace `<venv_name>` with name of your virtual environment): `source <venv_name>/bin/activate`
+2. Install requirements (inside of project directory, this is important - only need to complete this if requirements have changed): `pip install -r requirements.txt`
 3. Run CLI: `python3 crypto_toolkit.py`
 4. Follow prompts to encrypt/decrypt messages
 5. Deactivate virtual environment when done: `deactivate`
@@ -62,8 +67,13 @@ This project demonstrates RSA and AES encryption with HMAC verification in a Pyt
 
 ## Run Unit Tests
 
-1. Install requirements (inside of project directory, this is important): `pip install -r requirements.txt`
-    - Create a virtual environment inside of your project directory: `python3 -m venv <venv_name>`
-2. Activate virtual environment (replace `<venv_name>` with name of your virtual environment): `source <venv_name>/bin/activate`
+First time:
+
+1. Create a virtual environment inside of your project directory (only if one does not already exist): `python3 -m venv <venv_name>`
+
+Subsequent use:
+
+1. Activate virtual environment (replace `<venv_name>` with name of your virtual environment): `source <venv_name>/bin/activate`
+2. Install requirements (inside of project directory, this is important - only need to complete this if requirements have changed): `pip install -r requirements.txt`
 3. Run: `python3 -m unittest tests.py` or `python3 -m unittest -v tests.py`
 4. Deactivate virtual environment when done: `deactivate`
