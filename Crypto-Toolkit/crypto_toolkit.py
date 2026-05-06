@@ -1,4 +1,6 @@
 import argparse
+import os
+from Cryptodome.PublicKey import RSA
 
 def rsa_encrypt():
     pass
@@ -18,8 +20,20 @@ def generate_hmac():
 def verify_hmac():
     pass
 
-def generate_keys():
-    pass
+def generate_RSA_keys():
+    key = RSA.generate(2048)
+
+    os.makedirs("keys", exist_ok = True)
+
+    private_key = key.export_key()
+    with open ("keys/private.pem", "wb") as f:
+        f.write(private_key)
+
+    public_key = key.publickey().export_key()
+    with open ("keys/public.pem", "wb") as f:
+        f.write(public_key)
+
+    print("RSA key pair generated")
 
 def encrypt(plaintext):
     pass
@@ -54,7 +68,7 @@ def main():
     args = parser.parse_args()
 
     if args.generate_keys:
-        generate_keys()
+        generate_RSA_keys()
 
     elif args.encrypt:
         encrypt(args.encrypt)
